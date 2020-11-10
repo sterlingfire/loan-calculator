@@ -9,6 +9,8 @@ function getFormValues() {
     years: document.getElementById("loan-years").value,
     rate: document.getElementById("loan-rate").value
   }
+
+  
   return result;
 }
 
@@ -32,6 +34,7 @@ function getFormValuesAndDisplayResults() {
   let monthly = calcMonthlyPayment(formValues);
   // limit to two digits 
   result.innerText = `$ ${monthly.toFixed(2)}`;
+
 }
 
 /** Set initial form values and show initial results. Called at app start. */
@@ -41,6 +44,7 @@ function setInitialValues() {
   let amount = document.getElementById("loan-amount");
   let years = document.getElementById("loan-years");
   let rate = document.getElementById("loan-rate");
+<<<<<<< HEAD
   // set initial value 
   amount.value = 10000;
   years.value = 10;
